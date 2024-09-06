@@ -1,0 +1,4 @@
+__pycache__
+jacobcommands.txt
+.venv
+*.egg-info
