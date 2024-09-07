@@ -12,11 +12,10 @@ setup(
     author='Jacob Zhou',
     author_email='zhoujaco9220@gmail.com',
     license='MIT License',
-    description='<short description for the tool>',
+    description='Quanta test',
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/zhoujacob/quanta',
-    py_modules=['my_tool'],
     packages=find_packages(),
     install_requires=requirements,
     python_requires='>=3.7',
@@ -26,7 +25,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'quanta=my_tool:cli',
+            'quanta=app.scripts.my_tool:cli',
         ],
     },
 )
