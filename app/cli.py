@@ -1,6 +1,7 @@
 import click
+from app.track import is_app_running
 
-# We have a group of commands
+# Quanta CLI tool to track app usage
 @click.group()
 def cli():
     pass
@@ -10,4 +11,8 @@ def cli():
 @click.option('--app', default=None, help='Name of the application to track usage')
 def track(app):
     """Track the usage of an application by its name."""
-    click.echo(f'Tracking {app}')
+    click.echo(f'Tracking usage for {app}')
+    is_app_running(app)
+    
+if __name__ == '__main__':
+    cli()

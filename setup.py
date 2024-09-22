@@ -25,7 +25,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'quanta=app.my_tool:cli', 
+            'quanta=app.cli:cli', 
         ],
     },
 )
